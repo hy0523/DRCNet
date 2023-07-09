@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="492edbd4-d34e-4343-bc0d-be7d1733711a" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/train.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/model/DRCNet.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="2IOXbQ9oR5J1pqOjLoboDcRHJhU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/utils" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="492edbd4-d34e-4343-bc0d-be7d1733711a" name="Changes" comment="" />
+      <created>1670053673458</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670053673458</updated>
+      <workItem from="1670053675437" duration="118000" />
+      <workItem from="1670228537501" duration="148000" />
+      <workItem from="1670293908378" duration="966000" />
+      <workItem from="1670303081333" duration="1177000" />
+      <workItem from="1675078072113" duration="781000" />
+      <workItem from="1676600184958" duration="1940000" />
+      <workItem from="1677826249117" duration="75000" />
+      <workItem from="1677835460665" duration="4683000" />
+      <workItem from="1677992674540" duration="608000" />
+      <workItem from="1678098532164" duration="234000" />
+      <workItem from="1678332398813" duration="586000" />
+      <workItem from="1678884904501" duration="1056000" />
+      <workItem from="1678965942058" duration="1029000" />
+      <workItem from="1681032304826" duration="1572000" />
+      <workItem from="1681612469407" duration="2333000" />
+      <workItem from="1681643141509" duration="599000" />
+      <workItem from="1681694404397" duration="46000" />
+      <workItem from="1684636761782" duration="10467000" />
+      <workItem from="1685252951915" duration="651000" />
+      <workItem from="1685358813481" duration="535000" />
+      <workItem from="1685631585955" duration="4470000" />
+      <workItem from="1688907045710" duration="3448000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
