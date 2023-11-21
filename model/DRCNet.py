@@ -40,10 +40,10 @@ def get_gram_matrix(fea):
 
 
 # Dynamic Context Module
-class CCM(nn.Module):
+class DCM(nn.Module):
 
     def __init__(self):
-        super(CCM, self).__init__()
+        super(DCM, self).__init__()
         self.proj_k = nn.Conv2d(256, 256, 1, bias=False)
         self.proj_v = nn.Conv2d(256, 9, 1, bias=False)
         self.sigmoid = nn.Sigmoid()
@@ -109,7 +109,7 @@ class OneModel(nn.Module):
             PSPNet_.load_state_dict(new_param)
 
         self.layer0, self.layer1, self.layer2, self.layer3, self.layer4 = PSPNet_.layer0, PSPNet_.layer1, PSPNet_.layer2, PSPNet_.layer3, PSPNet_.layer4
-        self.ccm = CCM()
+        self.dcm = DCM()
         # Base Learner
         self.learner_base = nn.Sequential(PSPNet_.ppm, PSPNet_.cls)
 
@@ -211,7 +211,7 @@ class OneModel(nn.Module):
                 [
                     {'params': model.down_query.parameters()},
                     {'params': model.down_supp.parameters()},
-                    {'params': model.ccm.parameters()},
+                    {'params': model.dcm.parameters()},
                     {'params': model.init_merge.parameters()},
                     {'params': model.res1_simple.parameters()},
                     {'params': model.res2_simple.parameters()},
@@ -233,7 +233,7 @@ class OneModel(nn.Module):
                 [
                     {'params': model.down_query.parameters()},
                     {'params': model.down_supp.parameters()},
-                    {'params': model.ccm.parameters()},
+                    {'params': model.dcm.parameters()},
                     {'params': model.init_merge.parameters()},
                     {'params': model.res1_simple.parameters()},
                     {'params': model.res2_simple.parameters()},
@@ -342,8 +342,8 @@ class OneModel(nn.Module):
         dynamic_feat_list = []
         for i, tep_supp_middle_feat in enumerate(supp_middle_feat_list):
             supp_feat_masked = self.masking(tep_supp_middle_feat, mask_list[i])
-            ccm_feat = self.ccm(query_feat, supp_feat_masked)
-            dynamic_feat_list.append(ccm_feat.reshape(bs, 256, 1, size_h * size_w))
+            dcm_feat = self.dcm(query_feat, supp_feat_masked)
+            dynamic_feat_list.append(dcm_feat.reshape(bs, 256, 1, size_h * size_w))
         dynamic_feat = torch.cat(dynamic_feat_list, 2)
         dynamic_feat = (weight_soft.permute(0, 2, 1, 3) * dynamic_feat).sum(2, True)
         dynamic_feat = dynamic_feat.reshape(bs, 256, size_h, size_w)
